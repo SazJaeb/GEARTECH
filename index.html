@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GEARTECH</title>
+
+  <style>
+    /* ===== COLORS & FONTS ===== */
+    body { 
+      font-family: 'Segoe UI', Arial, sans-serif; 
+      margin: 0; padding: 0; 
+      background:#F2F4F6; 
+      color: #333333; 
+    }
+
+    header { 
+      background: #0B1E3D; 
+      color: white; 
+      padding: 25px 20px; 
+      text-align: center; 
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    }
+
+    nav { 
+      background: #2E2E2E; 
+      padding: 12px; 
+      text-align: center; 
+      position: sticky; 
+      top:0; 
+      z-index:10; 
+      box-shadow:0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    nav a { 
+      color: #A4D357; 
+      margin: 0 15px; 
+      text-decoration: none; 
+      font-weight: 600; 
+      transition:0.3s;
+    }
+    nav a:hover { opacity:0.7; }
+
+    .hero {
+      background: url('https://www.bikesrepublic.com/wp-content/uploads/2022/06/HNSKXHI7BBCJJFSAZDVWVDWWGA-1.jpg') center/cover;
+      padding: 110px 20px;
+      text-align: center; 
+      color:#ffffff;
+    }
+    .hero h1 { 
+      font-size:48px; 
+      font-weight:800; 
+      margin-bottom: 12px; 
+      text-shadow:3px 3px 8px rgba(0,0,0,0.8); 
+    }
+    .hero p { 
+      font-size:20px; 
+      opacity:0.9;
+      color:#ffffff;
+    }
+
+    .section { padding: 45px 20px; max-width:1100px; margin:auto; line-height:1.6; }
+
+    .products { display:flex; justify-content:center; }
+
+    .card { 
+      background: #fff; 
+      padding: 20px; 
+      border-radius: 14px; 
+      box-shadow: 0 6px 18px rgba(0,0,0,0.1); 
+      text-align:center; 
+      width: 340px;
+      transition: 0.3s;
+    }
+    .card:hover { transform: translateY(-7px); }
+
+    .card img { width:100%; border-radius:10px; height:400px; object-fit:cover; }
+
+    .whatsapp-btn {
+      display:inline-block; 
+      background:#A4D357; 
+      color:#111111; 
+      padding:14px 20px; 
+      border-radius:10px; 
+      text-decoration:none; 
+      font-size:17px; 
+      font-weight:bold; 
+      margin-top:12px; 
+      transition:0.25s;
+    }
+    .whatsapp-btn:hover { background:#8AB845; color:white; }
+
+    footer {
+      background:#0B1E3D; 
+      color:white; 
+      text-align:center; 
+      padding:18px; 
+      margin-top:40px; 
+    }
+
+    .contact-list { list-style:none; padding:0; }
+    .contact-list li { margin:8px 0; font-size:16px; }
+
+    /* SCROLL ANIMATION */
+    .animate { opacity:0; transform:translateY(20px); transition:all 0.8s ease-out; }
+    .animate.visible { opacity:1; transform:translateY(0); }
+
+    html { scroll-behavior: smooth; }
+
+    /* MOBILE */
+    @media(max-width:600px){
+      .hero h1{ font-size:30px; }
+      nav a { display:block; padding:8px; }
+      .card { width:100%; }
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- HEADER WITH GEARTECH LOGO -->
+  <header class="animate">
+    <div style="display:flex;align-items:center;justify-content:center;gap:16px;">
+      <img src="GEARTECH.jpg" alt="GEARTECH Logo" style="width:70px;height:70px;object-fit:contain;">
+      <div style="text-align:left;color:white">
+        <h1 style="margin:0;">GEARTECH</h1>
+      </div>
+    </div>
+  </header>
+
+  <nav class="animate">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#products">Products</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero animate" id="home">
+    <h1>GEARTECH — Safer Riding for Everyone</h1>
+    <p>Affordable safety-focused helmets developed by students to protect daily riders.</p>
+  </section>
+
+  <!-- COMPANY BACKGROUND & ABOUT US -->
+  <section class="section animate" id="about">
+    <h2>Company Background</h2>
+    <p>
+      GEARTECH is an innovative student-founded startup with a mission to enhance motorcycle rider safety through practical design and smart technology. We believe that every rider deserves maximum protection without breaking the budget.
+
+Guided by research and user feedback, we develop helmets that not only meet safety standards, but are also comfortable, lightweight, and stylish for daily use.
+
+As a young and dedicated team, we continually improve our products through real-world testing, practical innovation, and community collaboration, ensuring that NeuroShield remains the top choice for riders who value both safety and quality.
+    </p>
+    <p>
+      We continuously refine our products through field testing and user feedback, ensuring that every 
+      helmet meets essential safety standards while remaining accessible to students, delivery riders, 
+      and daily commuters.
+    </p>
+
+    <h2>About Us</h2>
+    <p>
+      Our team consists of students passionate about engineering, safety, and real-world problem solving. 
+      We value creativity, teamwork, and continuous improvement. Customer feedback is central to our 
+      development process, helping us enhance our design with each batch.
+    </p>
+  </section>
+
+  <!-- PRODUCT SECTION -->
+  <section class="section animate" id="products">
+    <h2>Our Product</h2>
+    <div class="products">
+      <div class="card">
+        <img src="helmet real.jpg" alt="GEARTECH Helmet">
+        <h3>GEARTECH Helmet</h3>
+        <p>Durable helmet with comfort padding and reflective trims for better visibility and safer daily riding.</p>
+        <a class="whatsapp-btn" href="https://wa.me/60192545686?text=Hi%2C%20I%20want%20to%20order%20GEARTECH%20Helmet" target="_blank">Order via WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section animate" id="contact">
+    <h2>Contact Us</h2>
+    <ul class="contact-list">
+      <li><strong>Contact person:</strong> Shazarul Akma</li>
+      <li><strong>Phone:</strong> 019-254 5686</li>
+      <li><strong>Email:</strong> <a href="mailto:smarthelmet@gmail.com">smarthelmet@gmail.com</a></li>
+      <li><strong>Address:</strong> 13 & 15, Jalan Setia Utama AW U13/AW, Setia Alam, 40170 Shah Alam, Selangor</li>
+    </ul>
+  </section>
+
+  <footer class="animate">
+    <p>© 2025 NeuroShield — ENT Project</p>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script>
+    // Fade-in scroll animation
+    const elements = document.querySelectorAll('.animate');
+    function checkVisibility() {
+      const trigger = window.innerHeight * 0.85;
+      elements.forEach(el => {
+        const top = el.getBoundingClientRect().top;
+        if(top < trigger){ el.classList.add('visible'); }
+      });
+    }
+    window.addEventListener('scroll', checkVisibility);
+    window.addEventListener('load', checkVisibility);
+
+    // Smooth nav scrolling
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', function(e){
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        window.scrollTo({ top: target.offsetTop - 20, behavior: "smooth" });
+      });
+    });
+  </script>
+
+</body>
+</html>
